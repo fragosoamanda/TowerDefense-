@@ -20,3 +20,8 @@
          style="padding: 10px">
 </div>
 
+<div align="center">
+    <img src="Diagrama de sequencia.png" 
+         width="100%" 
+         style="padding: 10px">
+</div>

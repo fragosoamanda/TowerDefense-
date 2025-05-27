@@ -3,8 +3,7 @@
      style="padding: 10px">
 
 # Tower Defense  
-
-## << Descrição breve do domínio do problema >>
+O Jogos Tower Defense é um subgênero dos jogos de estratégia em que o objetivo principal é impedir que inimigos cheguem a um determinado ponto do mapa. Para isso, o jogador deve posicionar torres de defesa que atacam automaticamente os inimigos que se aproximam. 
 
 > Repositório destinado para o desenvolvimento do projeto final da disciplina 
 > PRG22107 - Programação orientada objeto. 
