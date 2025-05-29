@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-    <img src="Diagrama_de_classes.png" 
+    <img src="Diagrama de classes.png" 
          width="100%" 
          style="padding: 10px">
 </div>
@@ -21,7 +21,7 @@
 </div>
 
 <div align="center">
-    <img src="Diagrama de sequencia.png" 
+    <img src=".png" 
          width="100%" 
          style="padding: 10px">
 </div>

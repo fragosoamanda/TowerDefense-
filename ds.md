@@ -4,7 +4,7 @@ Um diagrama de sequência tem como finalidade representar, de forma temporal, a 
 
 
  <div align="center">
-    <img src="img/Diagrama de sequencia.png" 
+    <img src="img/.png" 
          width="100%" 
          style="padding: 10px">
 </div>

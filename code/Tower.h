@@ -2,11 +2,10 @@
 #define TOWER 
 #include <time.h>
 
-
 class Tower{
 private:
     int dano;
-    float alcance;
+    float alcance;a
     float TempRecarga;  //tempo entre 2 ataques consecutivos
     float UltimoAtck;   //ultimo ataque para controlar a recarga
     Posicao posicao;    //posição no mapa
