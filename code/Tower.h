@@ -1,23 +1,36 @@
 #ifndef TOWER_H
-#define TOWER 
-#include "Posicao.h"
-#include "Enemy.h"
-#include <time.h>
+#define TOWER_H
 
-class Tower{
+#include <QObject>
+#include <QGraphicsPixmapItem>
+#include <QTimer>
+#include <QtMath>
+#include "Enemy.h"
+#include "Posicao.h"
+
+class Tower : public QObject, public QGraphicsPixmapItem {
+    Q_OBJECT
+
 private:
     int dano;
     float alcance;
-    float TempRecarga;  //tempo entre 2 ataques consecutivos
-    float UltimoAtck;   //ultimo ataque para controlar a recarga
-    Posicao posicao;    //posição no mapa
-    
-public: 
-    Tower(int dano, float alcance, float TempRecarga, const Posicao& posicao);
-    bool podeAtacar();              // verifica se pode atacar 
-    
-    void atacar(Enemy& Enemy);  // ataca o inimigo se estiver no range
-    float distancia(const Posicao& p1, const Posicao& p2); // calcula a distancia entre dois pontos para saber se o inimigo esta no range
-    Posicao getPosicao() const;     // retorna a posição 
+    float tempRecarga;  // tempo entre ataques em ms
+    Posicao posicao;
+
+    QTimer* timer;      // temporizador para ataques
+
+public:
+    Tower(int dano, float alcance, float tempRecarga, const Posicao& posicao);
+
+    void procurarAlvo();               // verifica se há inimigos no alcance
+    void atacar(Enemy* enemy);         // ataca um inimigo
+
+    float distancia(const Posicao& p1, const Posicao& p2);
+    Posicao getPosicao() const;
+
+signals:
+    void disparou();
+
 };
-#endif 
+
+#endif // TOWER_H
