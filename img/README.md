@@ -21,7 +21,7 @@
 </div>
 
 <div align="center">
-    <img src=".png" 
+    <img src="Diagrama_de_sequencia.png" 
          width="100%" 
          style="padding: 10px">
 </div>
