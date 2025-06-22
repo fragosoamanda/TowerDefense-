@@ -7,9 +7,17 @@ O diagrama de sequência feito refere-se ao caso de uso Criar Torre, ilustrando 
 Quando o jogador clica no botão de criação de torre na interface, esta envia um comando para a engine do jogo. A engine verifica se o jogador possui dinheiro suficiente. Caso tenha, o processo continua: o jogador escolhe uma posição no mapa para instalar a torre. A engine então verifica se a posição selecionada está disponível. Se estiver, a torre é criada e adicionada ao mapa.
 
  <div align="center">
-    <img src="img/Diagrama_de_sequencia.png" 
+    <img src="img/Diagrama de sequencia2.png" 
          width="100%" 
          style="padding: 10px">
 </div>
+
+#### Ciclo principal de combate 
+ <div align="center">
+    <img src="img/Diagrama de sequencia1.png" 
+         width="100%" 
+         style="padding: 10px">
+</div>
+
 
 [Retroceder](dcu.md) | [Avançar](code.md)
