@@ -5,9 +5,9 @@ Um diagrama de caso de uso tem como principal objetivo representar visualmente a
 
 
  <div align="center">
-    <img src="img/Diagrama_de_uso.png" 
+    <img src="img/Caso de uso.png" 
          width="100%" 
-         style="padding: 10px">
+         style="padding: 1px">
 </div>
 
 [Retroceder](dc.md) | [Avançar](ds.md)
