@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/imagens">
+        <file>Enemy.png</file>
+        <file>Tower.png</file>
+        <file>grama.png</file>
+        <file>caminho3.png</file>
+        <file>projetil.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/new/prefix2"/>
+</RCC>
