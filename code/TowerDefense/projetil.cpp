@@ -5,13 +5,13 @@
 #include <qmath.h>
 #include "Enemy.h"
 
-Projetil::Projetil(Enemy *alvo) {
+Projetil::Projetil(Enemy *alvo) {                                   //chamado quando um projétil é criado na torre, e recebe um ponteiro para o inimigo que ele vai seguir.
     setPixmap(QPixmap(":/imagens/projetil.png").scaled(60, 60));    //define a imagem do projétil  e o tamanho
     this->alvo = alvo;                                              // armazena o ponteiro para o inimigo que será o alvo
 
     QTimer *moveTimer = new QTimer(this);                           //cria um timer para mover o projétil
     connect(moveTimer, &QTimer::timeout, this, &Projetil::move);
-    moveTimer->start(50);                                           // define o intervalo de tempo
+    moveTimer->start(50);                                           // define o intervalo de tempo. função que é chamada a cada 50ms
 }
 
 void Projetil::move() {
@@ -21,9 +21,8 @@ void Projetil::move() {
         return;
     }
 
-
-    qreal dx = alvo->x() - x();                                     // Calcular direção do projetil
-    qreal dy = alvo->y() - y();
+    qreal dx = alvo->x() - x();                                     // Calcular direção do projetil. diferença em x
+    qreal dy = alvo->y() - y();                                     // diferença em y
     qreal distancia = qSqrt(dx * dx + dy * dy);                     // distância euclidiana
 
     if (distancia < 10) {                                           // Se chegou perto o suficiente
@@ -35,5 +34,5 @@ void Projetil::move() {
 
 
     int velocidade = 10;
-    setPos(x() + velocidade * dx / distancia, y() + velocidade * dy / distancia); //move o projétil em direção ao alvo, mantendo a mesma direção
+    setPos(x() + velocidade * dx / distancia, y() + velocidade * dy / distancia);   //move o projétil em direção ao alvo, mantendo a mesma direção, com velocidade fixa em 10ms
 }
